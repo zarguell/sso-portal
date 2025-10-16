@@ -1,0 +1,37 @@
+version: "1.0"
+apps:
+  - id: "slack"
+    name: "Slack"
+    description: "Team communication and collaboration"
+    category: "Communication"
+    icon: "icons/slack.svg"
+    sso:
+      protocol: "saml"
+      entityId: "https://slack.com/sso/saml"
+      acsUrl: "https://yourcompany.slack.com/sso/saml"
+    tags: ["chat", "collaboration"]
+    enabled: true
+
+  - id: "github"
+    name: "GitHub Enterprise"
+    description: "Code repository and version control"
+    category: "Development"
+    icon: "icons/github.svg"
+    sso:
+      protocol: "oauth"
+      clientId: "github-client-id"
+      authEndpoint: "https://github.com/login/oauth/authorize"
+    tags: ["git", "development"]
+    enabled: true
+
+  - id: "salesforce"
+    name: "Salesforce"
+    description: "CRM and sales automation"
+    category: "Sales"
+    icon: "icons/salesforce.svg"
+    sso:
+      protocol: "saml"
+      entityId: "https://yourcompany.my.salesforce.com"
+      acsUrl: "https://yourcompany.my.salesforce.com?so=00D..."
+    tags: ["crm", "sales"]
+    enabled: true

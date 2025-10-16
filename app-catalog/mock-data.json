@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "email": "demo@customer.com",
+      "displayName": "Demo User",
+      "apps": ["slack", "github", "salesforce"]
+    },
+    {
+      "email": "test@customer.com",
+      "displayName": "Test User",
+      "apps": ["slack"]
+    }
+  ]
+}
